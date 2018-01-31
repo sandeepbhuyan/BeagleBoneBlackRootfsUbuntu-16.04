@@ -1,0 +1,16 @@
+TARGETS = rsyslog hostapd killprocs apache2 single udhcpd dbus loadcpufreq ssh cron rsync bluetooth avahi-daemon connman cpufrequtils ondemand rc.local
+INTERACTIVE = apache2
+apache2: rsyslog
+single: killprocs
+udhcpd: rsyslog
+dbus: rsyslog
+loadcpufreq: rsyslog
+ssh: rsyslog
+cron: rsyslog
+rsync: rsyslog
+bluetooth: rsyslog dbus
+avahi-daemon: dbus rsyslog
+connman: rsyslog dbus
+cpufrequtils: loadcpufreq
+ondemand: udhcpd rsyslog bluetooth dbus apache2 hostapd avahi-daemon connman cpufrequtils loadcpufreq ssh cron rsync
+rc.local: udhcpd rsyslog bluetooth dbus apache2 hostapd avahi-daemon connman cpufrequtils loadcpufreq ssh cron rsync
