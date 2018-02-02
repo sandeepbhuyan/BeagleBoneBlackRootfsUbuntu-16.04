@@ -1,0 +1,6 @@
+/etc/kernel/postinst.d/zz-uenv_txt
+/etc/udev/rules.d/60-omap-tty.rules
+/etc/udev/rules.d/80-gpio-noroot.rules
+/etc/udev/rules.d/81-pwm-noroot.rules
+/etc/udev/rules.d/82-gpio-config-pin.rules
+/etc/udev/rules.d/83-eqep-noroot.rules

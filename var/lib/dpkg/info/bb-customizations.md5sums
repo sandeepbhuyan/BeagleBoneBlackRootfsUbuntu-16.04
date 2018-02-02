@@ -1,0 +1,5 @@
+b0c8cfcdaa73ba3b20914cbf37fd9233  lib/systemd/system/generic-board-startup.service
+ef61c7db64f4deec2e1576f4320acdc2  usr/share/doc/bb-customizations/changelog.Debian.gz
+61a7c7c298652e07e0c0260ef8707942  usr/share/doc/bb-customizations/copyright
+b90d178ba0453f8a90d53de09b12a78d  usr/share/initramfs-tools/hooks/dtbo
+ff78cd2ec0ca870b0163371174ae53b4  usr/share/initramfs-tools/hooks/ti_pru_firmware
